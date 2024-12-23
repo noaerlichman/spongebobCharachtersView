@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search..."
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="#888"
+        android:background="@android:drawable/edit_text" /> />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
